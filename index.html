@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebo Página Virada</title>
+  <!-- Link do Bootstrap CSS (opcional, mas recomendado para melhor visual) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container py-5">
+
+  <h1 class="mb-4">Cadastro de Livros</h1>
+
+  <form>
+    <div class="mb-3">
+      <label for="tituloLivro" class="form-label">Título do Livro</label>
+      <input type="text" class="form-control" id="tituloLivro" placeholder="Digite o título do livro">
+    </div>
+
+    <div class="mb-3">
+      <label for="autorLivro" class="form-label">Autor</label>
+      <input type="text" class="form-control" id="autorLivro" placeholder="Digite o nome do autor">
+    </div>
+
+    <div class="row g-3 mb-3">
+      <div class="col">
+        <label for="editoraLivro" class="form-label">Editora</label>
+        <input type="text" class="form-control" id="editoraLivro" placeholder="Editora">
+      </div>
+      <div class="col">
+        <label for="anoLivro" class="form-label">Ano de Publicação</label>
+        <input type="number" class="form-control" id="anoLivro" placeholder="Ano">
+      </div>
+    </div>
+
+    <div class="row g-3 mb-3">
+      <div class="col">
+        <label for="isbnLivro" class="form-label">ISBN</label>
+        <input type="text" class="form-control" id="isbnLivro" placeholder="ISBN">
+      </div>
+      <div class="col">
+        <label for="paginasLivro" class="form-label">Nº de Páginas</label>
+        <input type="number" class="form-control" id="paginasLivro" placeholder="Quantidade">
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="generoLivro" class="form-label">Gênero</label>
+      <input type="text" class="form-control" id="generoLivro" placeholder="Ex: Romance, Ficção, Biografia...">
+    </div>
+
+    <div class="mb-3">
+      <label for="fotoLivro" class="form-label">Foto da Capa do Livro</label>
+      <input type="file" class="form-control" id="fotoLivro" accept="image/*">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar Livro</button>
+  </form>
+
+</body>
+</html>
